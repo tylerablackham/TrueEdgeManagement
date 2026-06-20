@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+  =====================================================================
+  TRUE EDGE MANAGEMENT — Contact / Inquire  (contact.html) — guest version
+  Email + phone work right away.
+  The FORM needs a free Formspree connection — see  FORM SETUP  below.
+  =====================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inquire About a Stay — True Edge Management</title>
+  <meta name="description" content="Tell True Edge Management where you're headed and your dates, and we'll help arrange a comfortable furnished home for your stay." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main">
+      <a class="nav-logo" href="index.html" aria-label="True Edge Management — home">
+        <img src="images/logo.png" alt="True Edge Management" />
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">How it works</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary nav-cta">Inquire</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap" style="max-width:760px">
+        <p class="eyebrow reveal">Inquire about a stay</p>
+        <!-- EDIT -->
+        <h1 class="reveal d1" style="font-size:clamp(2.4rem,5.5vw,3.8rem);margin-top:18px">Tell us where you're headed.</h1>
+        <p class="lede reveal d2" style="margin-top:22px">Share a few details about your assignment and we'll help arrange a comfortable home for your dates. Questions are welcome too — we're happy to help you figure out what you need.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap contact-grid">
+
+        <!-- ---- direct contact (works immediately) ---- -->
+        <div class="contact-direct">
+          <div class="contact-line">
+            <div class="lbl">Email</div>
+            <!-- EDIT -->
+            <a href="mailto:trueedgemanagement@gmail.com">trueedgemanagement@gmail.com</a>
+          </div>
+          <div class="contact-line">
+            <div class="lbl">Phone / text</div>
+            <!-- EDIT -->
+            <a href="tel:13072722509">(307) 272-2509</a>
+          </div>
+          <div class="contact-line">
+            <div class="lbl">Based in</div>
+            <a style="font-size:1.15rem" href="about.html">Utah — hosting beyond</a>
+          </div>
+          <!-- EDIT -->
+          <p class="contact-note">We reply to every inquiry within one business day. In a hurry or have a quick question? Call or text and we'll help right away.</p>
+        </div>
+
+        <!-- ---- inquiry form ---- -->
+        <!--
+          FORM SETUP (about 2 minutes, free):
+          1. Go to formspree.io and create a free account.
+          2. Create a new form; it gives you a web address ending in a short ID.
+          3. Replace  YOUR_FORM_ID  below with that ID.
+          Until you do, the email and phone above still work perfectly.
+        -->
+        <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="New stay inquiry — True Edge website" />
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="field row2">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone <span style="color:var(--muted);font-weight:400">(optional)</span></label>
+              <input id="phone" name="phone" type="tel" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="dest">Where are you headed? (city, state)</label>
+            <input id="dest" name="destination" type="text" placeholder="e.g. Salt Lake City, UT" />
+          </div>
+          <div class="field row2">
+            <div class="field">
+              <label for="start">Approx. start date</label>
+              <input id="start" name="start_date" type="text" placeholder="e.g. early August" />
+            </div>
+            <div class="field">
+              <label for="length">How long?</label>
+              <input id="length" name="length_of_stay" type="text" placeholder="e.g. about 3 months" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Anything else we should know?</label>
+            <textarea id="message" name="message" placeholder="Number of guests, pets, parking, must-haves, or any questions you have."></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send my inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="wordmark">True Edge Management</div>
+          <p>Comfortable, fully-furnished homes for professionals on the move. Based in Utah, expanding across the U.S.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">How it works</a>
+          <a href="contact.html">Inquire about a stay</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <a href="mailto:trueedgemanagement@gmail.com">trueedgemanagement@gmail.com</a>
+          <a href="tel:13072722509">(307) 272-2509</a>
+          <span>Utah, USA</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> True Edge Management. All rights reserved.</span>
+        <span><a href="contact.html" style="color:inherit">Own a home? Partner with us →</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
